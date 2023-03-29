@@ -4,81 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>我愛健身網站</title>
-
-    <style>
-        body{
-            background-color: #CFB997;
-            color: #305a04;
-            font-family:標楷體, 細明體, 微軟正黑體;
-            text-align: center;
-        }
-
-        /* 對應 class="sub-title" */
-        .sub-title {
-            background-color: #FAD6A5; 
-            color: #61764B; 
-            /* 1 rem => 16px */
-            font-size:1.5rem; 
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-align: left;
-            margin: 12px;
-            padding: 6px;
-        }
-        .title {
-            font-size: 3rem;
-            border-radius: 12px;
-            margin: 12px;
-            padding: 16px 12px;
-            text-align: center;
-        }
-        span {
-            border-radius: 6px;
-            font-size: 1.5rem;
-        }
-        #container {
-            width: 90%;
-            margin: 12px auto;
-        }
-        img {
-            background-color: #b2e6dc;
-            padding: 6px;
-            width: 30%;
-        }
-        /* class=".banner" 底下的 img標籤 */
-        .banner img {
-            width: 100%;
-        }
-        a {
-            color: palevioletred;
-        }
-        a:visited {
-            color: blue;
-        }
-        a:hover {
-            color:lightgreen
-        }
-        li {
-            text-align: left; font-family: 'Courier New', Courier, monospace;font-size: larger;
-        }
-        small a {
-            color:black
-        }
-        table {
-            width: 80%;
-            margin: 0px auto;
-            font-size: 1rem;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        th {
-            background-color: lightcoral;
-            color:white;
-        }
-        td {
-            background-color:aquamarine;
-            color: rgb(3, 91, 94);
-            font-size: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -86,7 +13,7 @@
 <div id="container">
 <!-- 註解區 -->
 <!-- 測試 ctrl+/ -->
-<div class="sub-title title">&spades;&nbsp;何謂健身?</div>
+<div class="title sub-title">&spades;&nbsp;何謂健身?</div>
 <div style ="color: rgb(248, 246, 246);font-family: 微軟正黑體;">
     <h3>
         健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。
@@ -123,7 +50,6 @@
 <img src="images/pic-2.jpg" alt="pic-2.jpg" width="32%">
 <img src="images/pic-3.jpg" alt="pic-3.jpg" width="32%">
 </p>
-
 <hr>
 <div class="sub-title">&diams;&nbsp;好文章連結</div>
 <li>
@@ -186,9 +112,10 @@
 </p>
 <hr>
 <div class="sub-title">影片介紹</div>
-<iframe width="500px" height="400px" 
+<br>
+<iframe width="100%" height="400px" 
     src="https://www.youtube.com/embed/M0uO8X3_tEA" title="20 Minute Full Body Cardio HIIT Workout [NO REPEAT]" frameborder="0"                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<iframe width="500px" height="400px" 
+<iframe width="100%" height="400px" 
     src="https://www.youtube.com/embed/GViX8riaHX4" title="30 Min FULL BODY DUMBBELL WORKOUT at Home | Muscle Building" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <!-- <video src="video/sample-5s.mp4" controls width="100%">
 </video> -->
@@ -203,6 +130,7 @@
     <textarea id="command" name="command" cols="25" rows="20"></textarea>
     <p>
         <button type="submit">提交</button>
+        <button type="reset">清除</button>
     </p>
 </form>
 </div>
